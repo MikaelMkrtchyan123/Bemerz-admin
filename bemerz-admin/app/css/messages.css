@@ -1,0 +1,149 @@
+
+/*              Messages                */
+
+.messages-content .input-field {
+  width: 300px;
+}
+
+.messages-content .nav-wrapper .table-cell {
+  vertical-align: middle;
+}
+
+.messages-content .members-list {
+  padding: 0 20px;
+  /*width: 401px;*/
+  white-space: nowrap;
+}
+
+.messages-content .input-field .select-dropdown {
+  margin-bottom: 0;
+}
+
+.group-members-list .messages-list .collection {
+  overflow: visible;
+}
+
+.group-members-list .messages-list .collection .collection-item {
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 4px #cdcdcd;
+}
+
+.messages-list .collection .collection-item > .table {
+  padding-bottom: 0;
+}
+
+.group-members-list .messages-list .collection .collection-item.avatar .circle {
+  border-radius: 50%;
+}
+
+.messages-list .collection .collection-item .table-cell.title-cell {
+  padding: 0 20px;
+  text-align: justify;
+}
+
+.messages-list .collection .collection-item .title-cell.bolder .title,
+.messages-list .collection .collection-item .title-cell.bolder .description {
+  font-weight: 600;
+}
+
+.messages-list .collection .collection-item.avatar .title.has_truncate {
+  max-height: 87px;
+  word-break: break-all;
+}
+
+.messages-list .collection .collection-item.avatar .title.has_truncate:before {
+  right: 40px;
+}
+
+.messages-list .collection .collection-item.avatar .title.has_truncate:after {
+  height: 21px;
+  width: 21px;
+  right: 40px;
+}
+
+.messages-list .collection .collection-item.avatar .description.has_truncate {
+  max-height: 97px;
+  padding-right: 40px;
+}
+
+.messages-list .collection .collection-item.avatar .description.has_truncate:before {
+  right: 22px;
+}
+
+.messages-list .collection .collection-item.avatar .description.has_truncate:after {
+  height: 21px;
+  width: 21px;
+  right: 22px;
+}
+
+.messages-list .collection .collection-item.avatar .title {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding-right: 62px;
+}
+
+.messages-list .collection .collection-item.avatar .high-priority {
+  color: #FFEA2D;
+  display: block;
+  text-align: right;
+  position: absolute;
+  right: 20px;
+  top: 17px;
+}
+
+.add-message .tabs-bar {
+  font-size: 0;
+  width: 80%;
+  margin: auto;
+}
+
+.add-message .tabs-bar .tab-item {
+  width: 50%;
+}
+
+.add-message .tabs-bar .tab-item .tab-label {
+  padding: 5px 15px;
+  text-align: center;
+  height: auto;
+  font-size: 18px;
+  display: block;
+  border: 2px solid #532DA7;
+}
+
+.add-message .tabs-bar .tab-item .tab-label .tab-name {
+  color: #532DA7;
+}
+
+.add-message .tabs-bar [type="radio"] + .tab-label::before,
+.add-message .tabs-bar [type="radio"] + .tab-label::after {
+  display: none !important;
+}
+
+.add-message .tabs-bar .tab-item [type="radio"]:checked + .tab-label {
+  background-color: #532DA7;
+}
+
+.add-message .tabs-bar .tab-item [type="radio"]:checked + .tab-label .tab-name {
+  color: #fff;
+}
+
+.add-message .tabs-bar .tab-item:first-child .tab-label {
+  border-radius: 4px 0 0 4px;
+  border-right: none;
+}
+
+.add-message .tabs-bar .tab-item:last-child .tab-label {
+  border-radius: 0 4px 4px 0;
+  border-left: none;
+}
+
+.message-created-info {
+  margin-top: 10px;
+}
+
+.message-created-info.message-view {
+  font-size: 12px;
+  padding: 0 10px;
+}

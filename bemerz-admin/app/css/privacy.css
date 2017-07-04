@@ -1,0 +1,142 @@
+
+/*          privacy settings            */
+.privacy-content {
+  margin-bottom: 110px;
+}
+
+.privacy-content .privacy-navigation .page-title {
+  color: #fff;
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 26px;
+  vertical-align: middle;
+}
+.privacy-content .general-settings .general-settings-list .list-item.short {
+  float: left;
+  width: 50%;
+  margin-top: 10px;
+}
+.privacy-content .general-settings .general-settings-list .title {
+  padding-left: 10px;
+}
+.privacy-content .general-settings .breakline.title {
+  padding: 10px;
+  margin-right: 2%;
+  background-color: #a694d1;
+  color: #fff;
+  font-weight: 500;
+}
+.privacy-content .groups-settings .input-field.select-field {
+  margin-right: 0;
+}
+.privacy-content .groups-settings .breakline.title {
+  background-color: #a694d1;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px;
+}
+.privacy-content .groups-settings .table {
+  border-collapse: collapse;
+}
+.privacy-content .groups-settings .list-item {
+  padding: 20px;
+  border: 1px solid #cdcdcd;
+  width: 50%;
+}
+
+.privacy-content .groups-settings .list-item .switch {
+  position: relative;
+  padding-right: 60px;
+}
+.privacy-content .groups-settings .list-item .switch.disable-toggle label {
+  pointer-events: none;
+  opacity: 0.2;
+}
+.privacy-content .groups-settings .list-item .switch label {
+  position: absolute;
+  top:0;
+  right: 0;
+}
+
+.privacy-content .groups-settings .switch label .lever {
+  height: 25px;
+  background-color: #cdbbec;
+  width: 60px;
+}
+
+.privacy-content .groups-settings .switch label .lever:after {
+  top: 1px;
+  left: 1px;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  width: 23px;
+  height: 23px;
+}
+
+.privacy-content .groups-settings .switch label input[type="checkbox"]:checked + .lever::after {
+  left: 36px;
+  background-color: #fff;
+}
+
+.privacy-content .groups-settings .switch label input[type="checkbox"]:checked + .lever {
+  background-color: #9d66d4;
+}
+
+.privacy-content .groups-settings .button-bar {
+  margin-right: 0;
+}
+
+
+
+/*------------------------------------------------------------------------*/
+/*----------------------         RESPONISVE        -----------------------*/
+/*------------------------------------------------------------------------*/
+
+
+
+
+@media screen and (max-width: 480px) {
+  .privacy-content .general-settings .general-settings-list .list-item.short {
+    width: 100%;
+  }
+
+  .privacy-content .general-settings .general-settings-list .list-item.short .title {
+    font-size: 16px;
+    padding-left: 0;
+  }
+  .privacy-content .general-settings .general-settings-list .list-item.short .input-field {
+    margin-right: 0px;
+  }
+  .privacy-content .general-settings .general-settings-list .list-item.short .select-dropdown {
+    font-size: 14px;
+    padding-left: 10px;
+  }
+  .privacy-content .groups-settings .table {
+    display: block;
+  }
+  .privacy-message.center {
+    margin-bottom: 20px;
+  }
+  .privacy-content .groups-settings .table .table-row {
+    width: 100%;
+    display: block;
+  }
+  .privacy-content .groups-settings .list-item {
+    display: block;
+    width: 100%;
+    border-bottom: none;
+    padding-left: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,156 @@
+
+/*              User Info               */
+
+.user-info-content .user-info-name {
+  font-size: 18px;
+  margin: 0;
+}
+
+.user-info-content .user-info-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.user-info-content .modal-trigger {
+  display: block;
+  width: 100px;
+  height: 100px;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+
+}
+
+.user-info-content .modal {
+  text-align: center;
+}
+
+.user-info-content .modal .modal-close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.user-info-content .modal .modal-close:hover .fa {
+  color: #cccccc;
+}
+
+.user-info-content .modal .modal-close .fa {
+  font-size: 40px;
+  color: #dedede;
+}
+
+.user-info-content .button-bar {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.user-info-content .collection .collection-item .table-cell.avatar-cell {
+  min-width: 100px;
+}
+
+.user-info-content .collection .collection-item .table-cell.avatar-cell .circle {
+  width: 100px;
+  height: 100px;
+}
+
+.user-info-content .collection .collection-item .table-cell.title-cell {
+  padding-left: 40px;
+}
+
+.businneses-list .collection .collection-item.avatar,
+.user-info-content .collection .collection-item.avatar {
+  margin-top: 15px;
+}
+
+.user-info-content .collection .collection-item.avatar .title {
+  font-size: 25px;
+}
+
+.user-info-content .collection .action-cell .fa {
+  font-size: 25px;
+}
+
+
+/*                  Edit User Info               */
+
+.user-info-content .no-image {
+  height: 100px;
+}
+
+.edit-user-title {
+  text-align: center;
+  font-size: 24px;
+  margin: 0 auto 40px;
+}
+
+.edit-user-info-content .button-bar {
+  margin-top: 56px;
+}
+
+.edit-user-info-content .show-password .btn:last-child {
+  margin-right: 20px;
+}
+
+.modal.change-password-modal {
+  height: auto;
+  max-height: 100%;
+  max-width: 400px;
+  overflow: visible;
+}
+
+.modal.change-password-modal .change-password-content {
+  margin-bottom: 0;
+}
+
+.change-password-modal .change-password-content .headline {
+  font-size: 20px;
+  text-align: center;
+}
+
+
+
+/*                 Businnes List              */
+
+.businneses-list .collection {
+  border: 0;
+}
+
+.businneses-list .collection .collection-item .table-cell.title-cell {
+  padding-left: 40px;
+}
+
+.businneses-list .collection .collection-item.avatar .title {
+  font-size: 25px;
+}
+
+.businneses-list .collection .collection-item .secondary-content .fa {
+  font-size: 25px;
+}
+
+/*                Edit Businnes              */
+
+.edit-business .button-bar {
+  margin-top: 55px;
+}
+
+
+
+
+/*------------------------------------------------------------------------*/
+/*----------------------         RESPONISVE        -----------------------*/
+/*------------------------------------------------------------------------*/
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+  .edit-user-title {
+    text-align: center;
+  }
+}

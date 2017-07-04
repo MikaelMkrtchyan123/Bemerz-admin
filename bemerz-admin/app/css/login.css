@@ -1,0 +1,223 @@
+/*         Login and Sing up styles        */
+
+.public-content {
+  min-height: 70vh;
+}
+
+.short-box {
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.field-with-icon {
+  position: relative;
+
+}
+
+.field-with-icon input[type="password"],
+.field-with-icon input[type="text"],
+.field-with-icon input[type="email"] {
+  padding-right: 40px;
+}
+
+.field-with-icon .icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 100%;
+  cursor: pointer;
+}
+.field-with-icon .icon .fa {
+  color: #7357B9;
+  line-height: 46px;
+}
+
+.public-content .login-inner .mobile-page,
+.public-content .login-inner {
+  left: 50%;
+  margin: auto;
+  max-width: 570px;
+  position: absolute;
+  top: 50%;
+  -o-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.public-content .login-inner.mobile {
+  margin-top: 0;
+}
+
+.public-content .login-inner .mobile-page .button-bar {
+  margin-top: 0;
+}
+
+.public-content .login-inner .mobile-page .continue-browser {
+  margin-top: 10px;
+  color: #000000;
+  display: inline-block;
+}
+
+.login-inner .link-Box {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.login-inner .link-Box a {
+  color: #000000;
+}
+
+.login-inner .link-Box a:hover {
+  text-decoration: underline;
+}
+
+.login-inner form {
+  text-align: center;
+}
+
+.login-inner .show-password {
+  text-align: left;
+}
+
+.login-inner .show-password.terms-agree.has-error label:after,
+.welcome-content .show-password.terms-agree.has-error label:after {
+  border-color: #ff0000 !important;
+}
+
+.login-inner form .btn-submit {
+  margin: 10px 0;
+}
+
+.welcome-content .app-download-content,
+.login-inner .app-download-content {
+  display: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.welcome-content .app-download-content li a,
+.login-inner .app-download-content li a {
+  display: block;
+  border: 1px solid #7357B9;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 31px;
+}
+
+.welcome-content .app-download-content li,
+.login-inner .app-download-content li {
+  margin: 0 15px;
+}
+
+.welcome-content .app-download-content .ios-app a,
+.login-inner .app-download-content .ios-app a {
+  background: rgba(0, 0, 0, 0) url('../img/app-store.jpg') no-repeat scroll center center;
+  background-size: contain;
+  width: 88px;
+}
+
+.welcome-content .app-download-content .android-app a,
+.login-inner .app-download-content .android-app a {
+  background: rgba(0, 0, 0, 0) url('../img/playmarket.jpg') no-repeat scroll center center;
+  background-size: contain;
+  width: 98px;
+}
+
+.register-confirm {
+  text-align: center;
+}
+
+.register-confirm .register-confirm-desc {
+  text-align: center;
+}
+
+/*              Welcome Group Styles                 */
+.welcome-content {
+  margin-bottom: 20px;
+}
+
+.welcome-content .welcome-title {
+  text-align: center;
+}
+
+.welcome-content .welcome-desc {
+  text-align: center;
+}
+
+.welcome-content .button-bar.center {
+  text-align: center;
+}
+
+.welcome-content .link-box a:hover,
+.welcome-content .link-box a {
+  color: #000;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.welcome-content .inner-content .input-field.disabled label,
+.welcome-content .inner-content .input-field.disabled input[type='email'] {
+  color: #444 !important;
+}
+
+/*              Login responsive             */
+
+@media screen and (max-width: 1024px) {
+  .welcome-content .app-download-content,
+  .login-inner .app-download-content {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .welcome-content h2.welcome-title {
+    font-size: 30px;
+  }
+
+  .welcome-content h5.welcome-title {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .short-box {
+    max-width: 100%;
+  }
+
+  .welcome-content .welcome-desc {
+    font-size: 15px;
+  }
+
+  .login-inner .show-password label,
+  .welcome-content .show-password label {
+    font-size: 14px;
+  }
+
+  .login-inner .show-password.terms-agree label,
+  .welcome-content .show-password label {
+    line-height: 16px;
+  }
+
+  .welcome-content .button-bar {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .public-content .login-inner {
+    position: static;
+    transform: none;
+    margin-top: 20px;
+  }
+
+  .public-content .login-inner .mobile-page {
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "MontserratBold";
+    src: url(/app/fonts/montserrat/Montserrat-Bold.woff);
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(/app/fonts/montserrat/Montserrat-Regular.woff);
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(/app/fonts/montserrat/Montserrat-Regular.woff);
+}
+
+@font-face {
+    font-family: "RobotoRegular";
+    src: url(/app/fonts/roboto/Roboto-Regular.woff);
+}
+
+@font-face {
+    font-family: "RobotoBold";
+    src: url(/app/fonts/roboto/Roboto-Bold.woff);
+}
+
+@font-face {
+    font-family: "RobotoLight";
+    src: url(/app/fonts/roboto/Roboto-Light.woff);
+}
+
+@font-face {
+    font-family: "RobotoMedium";
+    src: url(/app/fonts/roboto/Roboto-Medium.woff);
+}
+
+@font-face {
+    font-family: "RobotoThin";
+    src: url(/app/fonts/roboto/Roboto-Thin.woff);
+}

@@ -1,0 +1,27 @@
+<h3 class="admin-center-text"> All Users </h3>
+<table class="striped">
+  <thead>
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Email Price</th>
+    <th>Address</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <tr ng-repeat="user in userList">
+    <td>{{user.firstName}}</td>
+    <td>{{user.lastName}}</td>
+    <td>{{user.email}}</td>
+    <td>{{user.address}}</td>
+  </tr>
+  </tbody>
+</table>
+<ul class="pagination admin-pagination" ng-if="pages.length > 1">
+  <li class="waves-effect" ng-class="{'disabled': activeIndex == firstIndex}" ng-click="openPage(activeIndex - 1)"><a href="javascript:void(0)"><i class="material-icons">chevron_left</i></a></li>
+  <li ng-repeat="i in pages" class="waves-effect" ng-class="{'active': i == activeIndex}" ng-click="openPage(i)">
+    <a href="javascript:void(0);">{{i}}</a>
+  </li>
+  <li class="waves-effect" ng-class="{'disabled': activeIndex == lastIndex}" ng-click="openPage(activeIndex + 1)"><a href="javascript:void(0)"><i class="material-icons">chevron_right</i></a></li>
+</ul>

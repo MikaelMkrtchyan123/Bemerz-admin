@@ -1,0 +1,42 @@
+{
+  "versions": {
+    "prod": "2.1.9",
+    "dev": "2.1.28"
+  },
+  "files": [
+    "lib/jquery.min.js",
+    "lib/angular.js",
+    "lib/angular-ui-router.js",
+    "lib/angular-validator.js",
+    "lib/angular-validation-match.min.js",
+    "lib/materialize.js",
+    "lib/ng-file-upload.min.js",
+    "lib/angular-http-loader.min.js",
+    "lib/moment.min.js",
+    "lib/fullcalendar.min.js",
+    "lib/jquery.smartbanner.js",
+    "lib/picker.time.js",
+    "lib/picker.js",
+    "lib/load-image.all.min.js",
+    "app.js",
+    "conf/constants.js",
+    "conf/config.js",
+    "conf/routes.js",
+    "conf/UsersRoutes.js",
+    "conf/GroupsRoutes.js",
+    "conf/PlansRoutes.js",
+    "controllers/controllers.js",
+    "controllers/UserController.js",
+    "controllers/GroupController.js",
+    "controllers/PlanController.js",
+    "services/services.js",
+    "services/UserServices.js",
+    "services/GroupsServices.js",
+    "services/PaymentsServices.js",
+    "services/CountryTimeZoneService.js",
+    "directives/BemerzDirectives.js",
+    "utils/BemerzUtils.js",
+    "utils/BemerzMessagesUtils.js",
+    "utils/MaterialUtils.js"
+  ]
+}

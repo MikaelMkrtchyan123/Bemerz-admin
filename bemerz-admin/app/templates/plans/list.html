@@ -1,0 +1,33 @@
+<h3 class="admin-center-text"> All Plans </h3>
+<table class="striped">
+  <thead>
+  <tr>
+    <th>Id</th>
+    <th>Plan Name</th>
+    <th>Trial Period Days</th>
+    <th>Maximum Groups Count</th>
+    <th>Maximum Rosters Count</th>
+    <th>Maximum Staffs Count</th>
+    <th>Amount</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <tr ng-repeat="plan in planList">
+    <td>{{plan.stripePlanId}}</td>
+    <td>{{plan.name}}</td>
+    <td>{{plan.trialPeriodDays}}</td>
+    <td>{{plan.maxGroupsCount}}</td>
+    <td>{{plan.maxRostersCount}}</td>
+    <td>{{plan.maxStaffsCount}}</td>
+    <td>{{plan.amount}}</td>
+  </tr>
+  </tbody>
+</table>
+<ul class="pagination admin-pagination" ng-if="pages.length > 1">
+  <li class="waves-effect" ng-class="{'disabled': activeIndex == firstIndex}" ng-click="openPage(activeIndex - 1)"><a href="javascript:void(0)"><i class="material-icons">chevron_left</i></a></li>
+  <li ng-repeat="i in pages" class="waves-effect" ng-class="{'active': i == activeIndex}" ng-click="openPage(i)">
+    <a href="javascript:void(0);">{{i}}</a>
+  </li>
+  <li class="waves-effect" ng-class="{'disabled': activeIndex == lastIndex}" ng-click="openPage(activeIndex + 1)"><a href="javascript:void(0)"><i class="material-icons">chevron_right</i></a></li>
+</ul>

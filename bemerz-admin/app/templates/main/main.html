@@ -1,0 +1,137 @@
+<header class="header">
+  <div id="headerMain" class="header-main table content-width" ng-class="{'is_disabled': isActiveUser}">
+    <div class="logo-content table-cell">
+      <a class="logo f_removeStyle" ui-sref="main.groups"></a>
+    </div>
+    <div class="menu-content table-cell">
+      <div class="username inline-block">
+        {{ user.firstName }} {{ user.lastName }}
+      </div>
+      <div class="menu-btn inline-block dropdown-button" id="menu-dropdown-button">
+        <span class="line"></span>
+        <span class="line short"></span>
+        <span class="line"></span>
+      </div>
+
+
+      <div class="menu-navigation dropdown-content" id="menu-navigation">
+        <ul id='dropdown1' class='navigation-list'>
+          <li class="list-item">
+            <a class="waves-effect waves-light f_removeStyle" ui-sref="main.edit_user_info">User info</a>
+          </li>
+          <li class="list-item">
+            <a class="waves-effect waves-light f_removeStyle" ui-sref="main.groups">Groups</a>
+          </li>
+          <li class="list-item">
+            <a class="waves-effect waves-light f_removeStyle" ui-sref="main.groups.create">Create group</a>
+          </li>
+          <li class="list-item">
+            <a ui-sref="main.get_started.staff">Get Started</a>
+          </li>
+          <li class="list-item">
+            <a class="waves-effect waves-light f_removeStyle" ui-sref="main.privacy_settings.general_settings">Privacy settings</a>
+          </li>
+          <li class="list-item">
+            <a class="waves-effect waves-light f_removeStyle" ng-click="logout()">Sign out</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<section class="welcome-box">
+  <nav class="groups-navigation">
+    <div class="nav-wrapper content-width">
+      <nav-bar>
+      </nav-bar>
+    </div>
+  </nav>
+  <section ui-view="mainContent" class="content-wrapper"></section>
+
+  <section id="referralModal" ui-view="referralModal" class="modal create-group"></section>
+
+  <section ui-view="deleteContent" class="content-wrapper delete-content">
+
+    <div id="modalDelete" class="modal delete-modal">
+      <div class="modal-content">
+        <h4 class="f_title"></h4>
+        <p class="f_description"></p>
+
+        <div class="modal-checkbox f_modal-checkbox is_hidden" >
+          <input id="modalCheckbox" type="checkbox" class="filled-in" />
+          <label class="f_modal-checkbox-desc" for="modalCheckbox"></label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="javascript:void(0)" class="modal-action modal-close btn btn-cancel">No</a>
+        <a href="javascript:void(0)" class="modal-action btn btn-submit deep-purple darken-2 right f_yesBtn">Yes</a>
+        <div class="clear"></div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="content-wrapper alert-content delete-content">
+
+    <div id="modalConfirm" class="modal modal-confirm delete-modal">
+      <div class="modal-content">
+        <h4 class="f_title"></h4>
+        <p class="f_description"></p>
+      </div>
+      <div class="modal-footer">
+        <a href="javascript:void(0)" class="modal-action modal-close btn btn-cancel">OK</a>
+        <div class="clear"></div>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="addUserInfoModal" ui-view="addUserInfoModal" class="modal create-group">
+  </section>
+
+  <section id="editUserInfo" ui-view="editUserInfoModal" class="modal create-group">
+  </section>
+</section>
+
+<footer class="footer">
+  <div class="footer-main table content-width">
+    <ul class="information-content table-cell">
+      <li class="information-item inline-block">
+        <a href="https://www.keedgo.com/about.html">About Us</a>
+      </li>
+      <li class="information-item inline-block">
+        <a href="https://www.keedgo.com/TermsOfUse.html">Terms & Conditions</a>
+      </li>
+      <li class="information-item inline-block">
+        <a href="https://www.keedgo.com/privacyPolicy.html">Privacy Policy</a>
+      </li>
+    </ul>
+    <div class="social-content table-cell">
+      <div class="social-item inline-block">
+        <a href="https://www.facebook.com/Keedgo-850576988382331/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+      </div>
+      <div class="footer-copyright inline-block">&copy; 2016 - 2017 Bemerz Software Inc. <span class="inline-block"> Version {{ version() }}</span></div>
+    </div>
+
+  </div>
+
+</footer>
+
+<div id="overlay" class="overlay">
+  <div class="preloader-wrapper big active">
+    <div class="spinner-layer spinner-blue-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div>
+      <div class="gap-patch">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+  <div id="loaderPercent" class="preloader-percent" style="display: none">0</div>
+</div>
